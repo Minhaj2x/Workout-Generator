@@ -1,0 +1,99 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto for a modern look */
+    background-color: #f5f5f5; /* Light gray background for contrast */
+    color: #333; /* Dark text for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation Styles */
+nav {
+    padding: 10px 0; /* Padding for nav */
+}
+
+.brand-logo {
+    font-size: 1.8rem; /* Larger font size for the logo */
+    color: #ffffff; /* White text color */
+}
+
+/* Container Styles */
+.container {
+    margin-top: 30px; /* Margin for top spacing */
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem; /* Size for main heading */
+    color: #2196F3; /* Primary color */
+}
+
+/* Form Styles */
+input[type="text"],
+select {
+    border: 1px solid #2196F3; /* Border color */
+}
+
+.btn {
+    background-color: #2196F3; /* Button color */
+    color: #ffffff; /* Button text color */
+}
+
+/* Workout Output Styles */
+#workout-output {
+    margin-top: 20px; /* Space above workout output */
+    padding: 15px; /* Padding around workout output */
+    background-color: #ffffff; /* White background for output */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Fade-in Animation */
+.fade-in {
+    opacity: 0; /* Start with 0 opacity */
+    animation: fadeIn 0.5s forwards; /* Keep final opacity */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start from invisible */
+    }
+    to {
+        opacity: 1; /* End at fully visible */
+    }
+}
+
+/* Responsive Layout for Recommended Workouts */
+.section {
+    margin-top: 30px; /* Space above sections */
+}
+
+.row {
+    display: flex; /* Use flexbox for responsiveness */
+    flex-wrap: wrap; /* Wrap items in flex */
+    justify-content: space-between; /* Space items evenly */
+}
+
+.col {
+    padding: 10px; /* Padding for columns */
+}
+
+/* Responsive Columns */
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%; /* Full width on small screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .col {
+        flex: 1 1 30%; /* 3 columns on medium screens and above */
+    }
+}
+
+/* Image Styles */
+.responsive-img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
